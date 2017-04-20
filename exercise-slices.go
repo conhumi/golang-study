@@ -9,8 +9,8 @@ func Pic(dx, dy int) [][]uint8 {
     for y := 0; y < dy; y++ {
         var line []uint8
         for x := 0; x < dx; x++ {
-            pixcel := y^x
-            line = append(line, uint8(pixcel))
+            pixel := y^x
+            line = append(line, uint8(pixel))
         }
         picture = append(picture, line)
     }
